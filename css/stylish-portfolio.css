@@ -136,7 +136,7 @@ hr.break{
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    transition: all 0.5s ease-in-out;
 }
 
 /*burger*/
@@ -247,21 +247,25 @@ a:hover{
     text-align: left;
     color: #fff;
     border: 8px solid #000;
-    height: 550px;
+    /*height: 550px;*/
     margin: 15px auto;
     background-color: #000;
     padding: 20px;
+    /*backface-visibility: hidden;*/
 }
 .portfolio-item h4{
   padding: 10px 0 20px 0;
   margin: 0 0 20px 0;
   border-bottom: 1px solid #fff;
+  /*backface-visibility: hidden;*/
+  /*opacity: 0;*/
 }
 .portfolio-item p{
   margin: 20px 0;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.1em;
+
 }
 .portfolio-item a{
   color: #fff;

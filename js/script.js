@@ -14,6 +14,15 @@ $(document).ready(function() {
         $("#sidebar-wrapper").toggleClass("active");
     });
 
+    //equalize paragraphs    
+    var maxHeight = 0;
+
+    $(".portfolio-item").each(function(){
+      if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+    });
+
+    $(".portfolio-item").height(maxHeight);
+
     // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
