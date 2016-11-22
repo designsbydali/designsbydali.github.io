@@ -14,7 +14,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="styles/ihover.css" rel="stylesheet">
+  <link href="css/hover-min.css" rel="stylesheet">
   <link href="css/stylish-portfolio.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
@@ -43,13 +43,13 @@
             <a href="#top" onclick=$("#menu-close").click();>Home</a>
         </li>
         <li>
-            <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
         </li>
         <li>
             <a href="#about" onclick=$("#menu-close").click();>About</a>
         </li>
         <li>
-            <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            <a href="#services" onclick=$("#menu-close").click();>Services</a>
         </li>
         <li>
             <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
@@ -70,13 +70,137 @@
           <p><span class="sub-title">I transform ideas into clean code.</span><br>
           <span class="sub-title">I love TYPOGRAPHY.</span><br>
           <span class="sub-title">Let's collaborate on innovative projects.</span></p>
-          <a href="#services"><i class="fa fa-arrow-circle-down fa-5x" aria-hidden="true"></i></a>
+          <div id="arrow">
+            <a href="#services"><i class="fa fa-arrow-circle-down fa-5x" aria-hidden="true"></i></a>
+          </div>
           <!-- <a href="#services" class="btn btn-dark btn-lg">More Info</a> -->
       </div>
   </header>
 
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfoli">
+    <div class="container-fluid">
+      <div class="portfolio row">
+        <div class="view col-md-4">
+            <a href="#"><img class="img-portfoli img-responsive" src="img/portfolio-1.jpg"></a>
+            <div class="mask">
+              <h4>Albatross
+              <a href="https://designsbydali.github.io/albatross" target="_blank"><i class="fa fa-link fa-1x hvr-float" aria-hidden="true"></i></a>
+              <a href="https://github.com/designsbydali/albatross" target="_blank"><i class="fa fa-github fa-1x hvr-float" aria-hidden="true"></i></a>
+            </h4>
+              <p>Created a static site of the band. Incorporated the bands multiple social media accounts into this showcasing website. Therefor each time one of the social media gets updated it reflects on the site.
+              <br><br>
+              <span class="label label-success">HTML</span>
+              <span class="label label-success">CSS</span>
+              <span class="label label-success">Bootstrap</span>
+              <span class="label label-success">Javascript</span>
+              </p>
+            </div>
+        </div>
+
+        <div class="view col-md-4">
+          <a href="#"><img class="img-portfoli img-responsive" src="img/portfolio-2.jpg"></a>
+          <div class="mask">
+            <h4>
+              The Lyricist
+              <a href="https://oiseaunoir.github.io/Lyricist/" target="_blank"><i class="fa fa-link fa-1x hvr-float" aria-hidden="true"></i></a>
+              <a href="https://github.com/designsbydali/Lyricist_api" target="_blank"><i class="fa fa-github fa-1x hvr-float" aria-hidden="true"></i></a>
+            </h4>
+            <p>A React app to find lyrics to your favorite songs. The app returns the user with the lyrics and the first 3 video matches of the song on Youtube. [Hint: trying searching for Die Antwoord, Guns N Roses, Albatross, Bob Dylan.
+            <br><br>
+            <span class="label label-success">Bootstrap</span>
+            <span class="label label-success">Node</span>
+            <span class="label label-success">Express</span>
+            <span class="label label-success">MongoDB</span>
+            </p>
+          </div>
+        </div>
+        <div class="view col-md-4">
+          <a href="#"><img class="img-portfoli img-responsive" src="img/portfolio-3.jpg"></a>
+          <div class="mask">
+            <h4>
+              The Petfinder
+              <a href="https://connect-the-spots.herokuapp.com/" target="_blank"><i class="fa fa-link fa-1x hvr-float" aria-hidden="true"></i></a>
+              <a href="https://github.com/designsbydali/petfinder-api" target="_blank"><i class="fa fa-github fa-1x hvr-float" aria-hidden="true"></i></a>
+            </h4>
+            <p>This app was designed to match people with adoptable pets within a list of local shelters. We used the Petfinder API to access a list of pets available for adoption. We also created list of pets and seeded it into mLab.
+            <br><br>
+            <span class="label label-success">Bootstrap</span>
+            <span class="label label-success">Node</span>
+            <span class="label label-success">Express</span>
+            <span class="label label-success">MongoDB</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="view col-md-4">
+          <a href="#"><img class="img-portfoli img-responsive" src="img/portfolio-4.jpg"></a>
+          <div class="mask">
+            <h4>
+              Tic-Tac-Toe
+              <a href="https://designsbydali.github.io/tictactoe" target="_blank"><i class="fa fa-link fa-1x hvr-float" aria-hidden="true"></i></a>
+              <a href="https://github.com/designsbydali/tictactoe" target="_blank"><i class="fa fa-github fa-1x hvr-float" aria-hidden="true"></i></a>
+            </h4>
+            <p>A tic-tac-toe experiment project based on Javascript. This was done as a first project while at General Assembly.
+            <br><br>
+            <span class="label label-success">HTML</span>
+            <span class="label label-success">CSS</span>
+            <span class="label label-success">Javascript</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="view col-md-4">
+          <a href="#"><img class="img-portfoli img-responsive" src="img/portfolio-5.jpg"></a>
+          <div class="mask">
+            <h4>
+              Two-Column Portfolio
+              <a href="https://designsbydali.github.io/twocolumn" target="_blank"><i class="fa fa-link fa-1x hvr-float" aria-hidden="true"></i></a>
+              <a href="https://github.com/designsbydali/twocolumn" target="_blank"><i class="fa fa-github fa-1x hvr-float" aria-hidden="true"></i></a>
+            </h4>
+            <p>An experiment using Bootstrap's two-column version of portfolio done as a project during course at General Assembly.
+            <br><br>
+            <span class="label label-success">HTML</span>
+            <span class="label label-success">CSS</span>
+            <span class="label label-success">Bootstrap</span>
+            <span class="label label-success">Javascript</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="view col-md-4">
+          <a href="#"><img class="img-portfoli img-responsive" src="img/portfolio-6.jpg"></a>
+          <div class="mask">
+            <h4>
+              Three-Column Portfolio
+              <a href="https://designsbydali.github.io/threecolumn" target="_blank"><i class="fa fa-link fa-1x hvr-float" aria-hidden="true"></i></a>
+              <a href="https://github.com/designsbydali/threecolumn" target="_blank"><i class="fa fa-github fa-1x hvr-float" aria-hidden="true"></i></a>
+            </h4>
+            <p>An experiment with Bootstrap three-column version of portfolio done during taking the developer course at General Assembly.
+            <br><br>
+            <span class="label label-success">HTML</span>
+            <span class="label label-success">CSS</span>
+            <span class="label label-success">Bootstrap</span>
+            <span class="label label-success">Javascript</span>
+            </p>
+          </div>
+        </div>
+        <!-- END OF PORTFOLIO -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+
+  <!-- About -->
+  <aside id="about" class="callout">
+      <div class="callout-text">
+
+      </div>
+  </aside>
+
   <!-- Services -->
-  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
   <section id="services" class="services bg-primary">
       <div class="container">
           <div class="row text-center no-padding">
@@ -150,174 +274,11 @@
       <!-- /.container -->
   </section>
 
-  <!-- About -->
-  <section id="abot" class="about">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  <h2></h2>
-              </div>
-          </div>
-          <!-- /.row -->
-      </div>
-      <!-- /.container -->
-  </section>
-
-  <!-- About -->
-  <aside id="about" class="callout">
-      <div class="callout-text">
-
-      </div>
-  </aside>
-
-  <!-- Portfolio -->
-  <section id="portfolio" class="portfolio">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <!-- <h2>Projects</h2>
-                  <hr class="small"> -->
-                  <div class="row">
-                      <div class="col-md-4">
-
-                        <div class="portfolio-item ">
-                          <h4>
-                              <strong>Albatross</strong>
-                              <a href="https://github.com/designsbydali/albatross" target="_blank"><i class="fa fa-github fa-2x hvr-float" aria-hidden="true"></i></a>
-                          </h4>
-
-                          <a href="https://designsbydali.github.io/albatross/" target="_blank">
-                              <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                          </a>
-                          <p>Created a static site of the band. Incorporated the bands multiple social media accounts into this showcasing website. Therefor each time one of the social media gets updated it reflects on the site.</p>
-
-                          <span class="label label-success">HTML</span>
-                          <span class="label label-success">CSS</span>
-                          <span class="label label-success">Bootstrap</span>
-                          <span class="label label-success">Javascript</span>
-
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="portfolio-item">
-                            <h4>
-                                <strong>The Lyricist</strong>
-                                <a href="https://github.com/designsbydali/Lyricist_api" target="_blank"><i class="fa fa-github fa-2x hvr-float" aria-hidden="true"></i>
-                                </a>
-                            </h4>
-                            <a href="https://oiseaunoir.github.io/Lyricist/" target="_blank">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                            </a>
-                            <p>A React app to find lyrics to your favorite songs. The app returns the user with the lyrics and the first 3 video matches of the song on Youtube. [Hint: trying searching for Die Antwoord, Guns N Roses, Albatross, Bob Dylan etc</p>
-                            <span class="label label-success">Bootstrap</span>
-                            <span class="label label-success">Node</span>
-                            <span class="label label-success">Express</span>
-                            <span class="label label-success">MongoDB</span>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-
-                          <div class="portfolio-item">
-                            <h4>
-                                <strong>The Petfinder</strong>
-                                <a href="https://github.com/designsbydali/petfinder-api" target="_blank"><i class="fa fa-github fa-2x hvr-float" aria-hidden="true"></i></a>
-                            </h4>
-                            <a href="https://connect-the-spots.herokuapp.com/" target="_blank">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                            </a>
-                            <p>This app was designed to match people with adoptable pets within a list of local shelters. We used the Petfinder API to access a list of pets available for adoption. We also created list of pets and seeded it into mLab.</p>
-                            <span class="label label-success">Bootstrap</span>
-                            <span class="label label-success">Node</span>
-                            <span class="label label-success">Express</span>
-                            <span class="label label-success">MongoDB</span>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-
-                          <div class="portfolio-item">
-                            <h4>
-                                <strong>Tic-Tac-Toe</strong>
-                                <a href="https://github.com/designsbydali/tictactoe" target="_blank"><i class="fa fa-github fa-2x hvr-float" aria-hidden="true"></i></a>
-                            </h4>
-                            <a href="http://designsbydali.github.io/tictactoe/" target="_blank">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                            </a>
-                            <p>A tic-tac-toe experiment project based on Javascript. This was done as a first project while at <span><a href="https://generalassemb.ly/" target="_blank" > General Assembly.</a></span></p>
-                            <span class="label label-success">HTML</span>
-                            <span class="label label-success">CSS</span>
-                            <span class="label label-success">Javascript</span>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="portfolio-item">
-                            <h4>
-                                <strong>Two-Column Portfolio</strong>
-                                <a href="https://github.com/designsbydali/twocolumn" target="_blank"><i class="fa fa-github fa-2x hvr-float" aria-hidden="true"></i></a>
-                            </h4>
-                            <a href="http://designsbydali.github.io/twocolumn/" target="_blank">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-5.jpg">
-                            </a>
-                            <p>An experiment using Bootstrap's two-column version of portfolio done as a project during course at General Assembly.</p>
-                            <span class="label label-success">HTML</span>
-                            <span class="label label-success">CSS</span>
-                            <span class="label label-success">Bootstrap</span>
-                            <span class="label label-success">Javascript</span>
-                          </div>
-                      </div>
-
-                      <div class="col-md-4">
-                          <div class="portfolio-item">
-                            <h4>
-                                <strong>Three-Column Portfolio</strong>
-                                <a href="https://github.com/designsbydali/threecolumn" target="_blank"><i class="fa fa-github fa-2x hvr-float" aria-hidden="true"></i></a>
-                            </h4>
-                            <a href="http://designsbydali.github.io/threecolumn/" target="_blank">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-6.jpg">
-                            </a>
-                            <p>An experiment with Bootstrap three-column version of portfolio done during taking the developer course at General Assembly.</p>
-                            <span class="label label-success">HTML</span>
-                            <span class="label label-success">CSS</span>
-                            <span class="label label-success">Bootstrap</span>
-                            <span class="label label-success">Javascript</span>
-                          </div>
-                      </div>
-                      <!-- END OF PORTFOLIO -->
-                  </div>
-                    <!-- end of row -->
-              </div>
-              <!-- /.col-lg-10 -->
-          </div>
-          <!-- /.row -->
-      </div>
-      <!-- /.container -->
-  </section>
-
-  <!-- Call to Action -->
-  <section id="contact" class="contact-pic">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-
-              </div>
-          </div>
-      </div>
-  </section>
-
   <!-- Footer -->
   <footer>
       <div class="container">
           <div class="row">
               <div class="col-lg-10 col-lg-offset-1 text-center">
-                  <!-- <h4><strong>Start Bootstrap</strong>
-                  </h4>
-                  <p>3481 Melrose Place
-                      <br>Beverly Hills, CA 90210</p>
-                  <ul class="list-unstyled">
-                      <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                      <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                      </li>
-                  </ul> -->
-                  <br>
                   <ul class="list-inline contact">
                       <li>
                         <span class="fa-stack fa-3x">
@@ -356,6 +317,7 @@
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+
 
   <!-- Bootstrap Core JavaScript -->
   <!-- <script src="js/bootstrap.min.js"></script> -->

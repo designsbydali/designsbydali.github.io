@@ -149,7 +149,7 @@ hr.break{
 .header {
     border-top: 20px solid #000;
     display: table;
-    position: static;
+    position: relative;
     width: 100%;
     height: 100%;
     background: url(../img/bg.jpg) no-repeat center center scroll;
@@ -175,8 +175,16 @@ hr.break{
 /* Services */
 
 .services {
-    padding: 50px 0;
-    border-top: 20px solid #000;
+  padding: 50px 0;
+  border-top: 20px solid #000;
+  /*background: url(../img/niva.jpg) no-repeat center center scroll;*/
+  /*height: 1935px;*/
+  position: static;
+  /*filter: invert(100%);*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .service-item {
@@ -189,7 +197,7 @@ hr.break{
   text-align: left;
 }
 .service-icon{
-  color: #efb907;
+  /*color: #efb907;*/
 }
 .service-item h4{
   background-color: #000;
@@ -205,13 +213,13 @@ hr.break{
 /* Callout */
 
 .callout {
-    border-top: 20px solid #000;
+    border-top: 20px solid #fff;
     display: table;
     width: 100%;
     height: 400px;
     color: #fff;
     background: url(../img/dali-1.jpg) no-repeat center center scroll;
-
+    filter: invert(100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -225,15 +233,15 @@ a:hover{
 
 }
 .portfolio {
-    padding: 50px 0;
+    /*padding: 56px 0;*/
     /*background-color: #efb907;*/
-    border-top: 20px solid #000;
-    background-color: #000;
-    display: table;
-    position: static;
-    width: 100%;
-    height: 100%;
-    background: url(../img/niva.jpg) no-repeat center center scroll;
+    /*border-top: 20px solid #000;*/
+    /*background-color: #000;*/
+    /*display: table;*/
+    /*position: static;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/niva.jpg) no-repeat center center scroll;*/
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
