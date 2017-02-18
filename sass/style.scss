@@ -1,0 +1,52 @@
+$black: #000;
+$white: #fff;
+$tomato: tomato;
+$opensans: Open Sans, sans-serif;
+$roboto: Roboto, sans-serif;
+
+
+body {
+  // font-family: $opensans;
+  font-family: $roboto;
+  background-color: $black;
+  color: $white;
+
+}
+
+.content {
+  font-size: 22px;
+  font-weight: 200;
+  width: 35%;
+  margin:10px 0;
+  padding:30px;
+  line-height: 30px;
+  letter-spacing: .8px;
+  text-align: left;
+  // border: 5px solid $white;
+  // box-shadow: 5px 20px 100px #222;
+}
+
+.content a {
+  text-decoration: none;
+  color: $tomato;
+  opacity: .7;
+  &:hover {
+    color: $tomato;
+    opacity: 1;
+  }
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+li {
+  padding-right: 10px;
+}
+
+li a{
+  cursor: pointer;
+}
