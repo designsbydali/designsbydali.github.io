@@ -19,6 +19,9 @@ body {
     margin: 100px 0;
     line-height: 60px;
   }
+  h1 {
+    font-size: 70px;
+  }
 }
 
 .content a {
@@ -40,7 +43,7 @@ ul {
 }
 
 li {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 li a {
