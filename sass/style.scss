@@ -4,27 +4,39 @@ $tomato: tomato;
 $opensans: Open Sans, sans-serif;
 $roboto: Roboto, sans-serif;
 
-
 body {
-  // font-family: $opensans;
   font-family: $roboto;
   background-color: $black;
   color: $white;
 
 }
 
+
 .content {
+  display: none;
   font-size: 22px;
   font-weight: 200;
-  width: 35%;
-  margin:10px 0;
-  padding:30px;
-  line-height: 30px;
+  margin: 30px 0;
+  line-height: 32px;
   letter-spacing: .8px;
-  text-align: left;
-  // border: 5px solid $white;
-  // box-shadow: 5px 20px 100px #222;
 }
+@mixin phone {
+  @media only screen and (max-width: 768px ){
+    @content;
+  }
+}
+@include phone {
+  .content {
+    font: {
+      size: 40px;
+    }
+    margin: 100px 0;
+    line-height: 60px;
+  }
+}
+
+
+
 
 .content a {
   text-decoration: none;
@@ -40,7 +52,7 @@ ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 li {
