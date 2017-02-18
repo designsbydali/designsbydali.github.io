@@ -3,7 +3,7 @@ $white: #fff;
 $tomato: tomato;
 $opensans: Open Sans, sans-serif;
 $roboto: Roboto, sans-serif;
-$phone: 760px ;
+$phone: 1000px ;
 
 body {
   font-family: $roboto;
@@ -13,7 +13,7 @@ body {
 }
 
 @mixin phone {
-  @media (max-width: #{$phone} ){
+  @media (max-width: $phone ){
     @content;
   }
 }
@@ -28,9 +28,9 @@ body {
 }
   @include phone {
     .content {
-      font-size: 30px;
+      font-size: 40px;
       margin: 100px 0;
-      line-height: 35px;
+      line-height: 60px;
     }
   }
 

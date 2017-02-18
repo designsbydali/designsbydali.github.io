@@ -13,11 +13,11 @@ body {
   letter-spacing: .8px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   .content {
-    font-size: 30px;
+    font-size: 40px;
     margin: 100px 0;
-    line-height: 35px;
+    line-height: 60px;
   }
 }
 
