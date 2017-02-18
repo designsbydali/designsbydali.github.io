@@ -1,0 +1,42 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.content {
+  font-size: 22px;
+  font-weight: 200;
+  width: 35%;
+  margin: 10px 0;
+  padding: 30px;
+  line-height: 30px;
+  letter-spacing: .8px;
+  text-align: left;
+}
+
+.content a {
+  text-decoration: none;
+  color: tomato;
+  opacity: .7;
+}
+
+.content a:hover {
+  color: tomato;
+  opacity: 1;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+li {
+  padding-right: 10px;
+}
+
+li a {
+  cursor: pointer;
+}
